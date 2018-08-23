@@ -1,0 +1,197 @@
+#containermain{
+  width: 600px;
+  height : 300px;
+}
+/* Album Display Container*/
+.albumdis{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(6,2fr);
+  grid-gap: 10px;
+}
+.albumdis div{
+  height: 150px;
+  background: #262626;
+  border-radius: 5px;
+}
+/* Login Button Css */
+
+  .button div {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button div:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover div {
+    padding-right: 25px;
+  }
+  
+  .button:hover div:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* .containerinfo div{
+    
+  } */
+
+  .userinfo{
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    box-shadow: 10px 5px 5px 5px #ddd;
+    /* width: 25%; */
+    height: 150px;
+    background-image: -webkit-linear-gradient(bottom, #ffffff 40%, #1DA1F2 60%);
+  }
+  .userinfo .ullink {
+    font-weight: bolder;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #ffffff; */
+    color: #262626;
+    margin-top: 5px;
+    /*height: 60px; */
+  }
+  
+  .userinfo li a {
+    display: block;
+    color: #657786;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  .userinfo li span{
+    color: #1b9ff1;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .userinfo li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #3366FF;
+    transition: 0.4s;
+  }
+  .userinfo li a:hover{
+    color: #1b9ff1;
+  }
+    
+  /* Dropdown menu css classes*/
+  .select-style select {
+      padding: 5px 8px;
+      width: 100%;
+      border: none;
+      box-shadow: none;
+      background: transparent;
+      background-image: none;
+      -webkit-appearance: none;
+  }
+
+  .select-style select:focus {
+      outline: none;
+  }
+
+  @media screen and (min-width: 580px){
+    .containerinfo{
+      margin-top:2%;
+      display: grid;
+      grid-template-columns: 2fr 8fr 2fr;
+    }
+    .select-style {
+      display: none;
+      border: 1px solid #ccc;
+      width: 120px;
+      border-radius: 3px;
+      /* overflow: hidden; */
+      background: #fafafa url("../img/icon-select.png") no-repeat 90% 50%;
+    }
+    .userinfo img{
+      width: 100px;
+      height: 100px;
+      border: 3px solid #C9CBCF;
+      border-radius: 50%;
+      margin: 20px 0px 0px 25px;
+    }
+    .userinfo li{
+      margin-top: 10px;
+      overflow: hidden;
+    }
+  }
+  
+  @media screen and (max-width: 580px){
+    .containerinfo{
+      margin-top:2%;
+      display: grid;
+      grid-template-columns: 1fr 10fr 1fr;
+    }
+    .userinfo ul{
+      display: none;
+    }
+    .select-style {
+      display: inline-block;
+      margin-top: 100px;
+      border: 1px solid #ccc;
+      width: 120px;
+      border-radius: 3px;
+      /* overflow: hidden; */
+      background: #fafafa url("../img/icon-select.png") no-repeat 90% 50%;
+    }
+    .userinfo img{
+      width: 70px;
+      height: 70px;
+      border: 3px solid #C9CBCF;
+      border-radius: 50%;
+      margin: 25px 0px 0px 25px;
+    }
+    .userinfo li{
+      margin-top: 7px;
+      overflow: hidden;
+    }
+  }
+  @media screen and (max-width: 315px){
+    .userinfo img{
+      width: 20px;
+      height: 20px;
+      border: 3px solid #C9CBCF;
+      border-radius: 50%;
+      margin: 10px 0px 0px 0px;
+    }
+    .userinfo li{
+      margin-top: 5px;
+      overflow: hidden;
+    }
+  }
+  .download{
+    cursor: pointer;
+    transition: transform .3s;
+  }
+  .download:hover{
+    transform: scale(0.7);
+  }
+  .box {
+    transition: box-shadow .3s;
+    border-radius:10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+  }
+  .box:hover {
+    box-shadow: 0px 5px 25px rgba(50, 50, 50, 1); 
+  }
